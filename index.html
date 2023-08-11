@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">    
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">    
+    <title>Digitar DNI</title>    
+</head>
+<body>
+    <h1 class="titulo">DIGITE SU DNI</h1>
+
+    <div class="dni">
+        <h3 class="labelTipoDoc">Tipo de doc.</h3>
+        <select class="tipoDoc" id="tipoDoc">
+            <option selected>DNI</option>
+            <option >PASAPORTE</option>
+            <option >Libreta Cívica</option>
+            <option >L.E. Cédula de Identidad</option>            
+        </select>
+    </div>
+
+    <div class="dni">
+        <h3 class="labelNroDoc">Nro. de doc.</h3>        
+        <input class="ingresa-dni" id="ingresa-dni" type="text" pattern="/{0,9}/v" minlength="6" maxlength="8" readonly >
+    </div>
+        
+    <div class="botonera">
+        <div class="del1Al3">
+            <button class="uno" id="botonUno" type="button" >1</button>
+            <button class="dos" id="botonDos" type="button" >2</button>
+            <button class="tres" id="botonTres" type="button" >3</button>
+        </div>
+        <div class="del4Al6">
+            <button class="cuatro" id="botonCuatro" type="button">4</button>
+            <button class="cinco" id="botonCinco" type="button">5</button>
+            <button class="seis" id="botonSeis" type="button">6</button>
+        </div>
+        <div class="del7Al9">
+            <button class="siete" id="botonSiete" type="button" >7</button>
+            <button class="ocho" id="botonOcho" type="button" >8</button>
+            <button class="nueve" id="botonNueve" type="button" >9</button>
+        </div>        
+        <div class="borra-cero-enter">
+            <button class="borra" id="botonBorra" type="button" >DEL</button>
+            <button class="cero" id="botonCero" type="button" >0</button>
+            <button class="enter" id="botonEnter" type="button" >OK</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
